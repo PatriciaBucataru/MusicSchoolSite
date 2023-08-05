@@ -1,0 +1,300 @@
+/*-----------------------------------------------------ANIMATIONS---------------------------------------------------------------*/
+@keyframes title
+{
+0%
+{
+  text-align: center;
+  visibility: visible;
+  opacity:0.2;
+  
+}
+50%
+{
+  text-align: center;
+  opacity:0.5;
+
+}
+100%
+{
+  text-align: center;
+  opacity:1;
+}
+}
+
+#info_rapid
+{
+
+  border:1px solid rgb(255, 255, 255);
+  text-align: center;
+  color:white;
+  border-collapse: collapse;
+  font-size: 20px;
+  height:60px;
+  opacity:0.8;
+  background-color: rgba(0,0,0,0.8);
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes welcome
+{
+
+  0%
+  {
+      opacity:0.1;
+  }
+
+  50%
+  {
+    opacity:0.4;
+    
+  }
+  100%
+  {
+    opacity:1;
+    transform:translateY(-40px);
+  }
+}
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+@keyframes erensialight
+{
+
+  0%
+  {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+  }
+
+  50%
+  {
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3);
+  }
+
+  100%
+  {
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.4);
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#erensia,#erensia2,#erensia3,#erensia4,#erensia5,#erensia6,#erensia7
+{
+  font-size:60px; /*Marimea font-ului*/
+  text-align: center;/*Aliniaza textul cu container-ul parinte*/
+  color:white;
+  font-family: 'Times New Roman', Times, serif;
+
+  opacity:1;
+  margin:0 20px 0 20px;/*Pastreaza spatiu intre literele din titlu*/
+}
+ 
+.erensia
+{
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  padding-top:100px; /* Spatiu adaugat pentru a departa titlul de varful ecranului. */
+  padding-bottom:40px;
+}
+
+body {
+
+background-image: radial-gradient(ellipse at bottom, #5d3b24, #000000), url("orchestra_hall.jpg");
+background-repeat: no-repeat; 
+
+background-size: 100% 100%, cover;
+background-blend-mode: overlay;
+
+background-position: fixed, center;
+margin: 0;
+overflow: hidden;
+padding:0;
+}
+
+
+
+
+
+#info_rapid
+{
+
+  border:1px solid rgb(255, 255, 255);
+  text-align: center;
+  color:white;
+  border-collapse: collapse;
+  font-size: 20px;
+  height:60px;
+  opacity:0.8;
+  background-color: rgba(0,0,0,0.8);
+
+}
+@font-face {
+    font-family: 'Trajan';
+    src: url('TrajanPro-Regular.ttf') format('truetype');
+  }
+  
+
+.content
+{
+    visibility:hidden;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  opacity:0;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+  animation-duration:2s;
+  animation-name:welcome;
+  margin-top: 200px;
+}
+
+#info
+{
+    opacity:1;
+   transform: translateY(-30px);
+    background-color: rgba(0,0,0,0.5);
+   
+    
+
+  
+}
+
+
+#about
+{
+  border: 1px solid rgb(255, 255, 255);
+  font-size:10px;
+  transition: background-color 0.2s ease;
+  
+
+}
+#about:hover
+{
+  background-color:rgba(255, 151, 78, 0.1);
+  cursor:pointer;
+}
+
+#contact
+{
+  border: 1px solid rgb(255, 255, 255);
+  font-size:10px;
+  transition: background-color 0.2s ease;
+}
+
+#contact:hover
+{
+  background-color:rgba(255, 151, 78, 0.1);
+  cursor:pointer;
+}
+
+#about
+{
+  border: 1px solid rgb(255, 255, 255);
+  font-size:10px;
+}
+
+a
+{
+  text-decoration: none; 
+  color: white;
+}
+
+table
+{
+    color:white;
+    justify-content: center;
+    text-align: center;
+}
+th,td
+{
+    text-align: center;
+    justify-content: center;
+}
+
+#about_div
+{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
+    margin-left:43px;
+    margin-top:10px;
+
+    animation-name:welcome;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+#about_div_th
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+}
+
+#home
+{
+    transition: background-color 0.2s ease;
+}
+
+#home:hover
+{
+    background-color:rgba(255, 151, 78, 0.1);
+  cursor:pointer;
+}
+
+#reservation
+{
+    color:white;
+    text-align: center;
+    font-size:20px;
+    margin: 0 auto;
+    width: 600px;
+  
+      justify-content: center; 
+    background-color:rgb(0,0,0,0.1);
+      border-radius: 10px;
+      border: 1px solid rgb(255, 255, 255);
+      padding-bottom:0px;
+}
+input[type="text"] {
+    color: white; /* Change the color to your desired color */
+    font-family: Trajan;
+    
+  }
+
+  input[type="date"] {
+    color: white; /* Change the color to your desired color */
+    font-family: Trajan;
+    
+  }
+
+  input[type="submit"] {
+    color: white; /* Change the color to your desired color */
+    font-family: Trajan;
+    
+  }
+
+  input[type="radio"] {
+    color: white; /* Change the color to your desired color */
+    font-family: Trajan;
+  
+    display: inline-block;
+    
+  }
+.container
+{
+   
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding-bottom:0px;
+   
+ 
+}
+
+.radio-container {
+    display: inline-block;
+    margin-right: 20px; /* Add some spacing between the radio input-label pairs */
+
+  }
+  
